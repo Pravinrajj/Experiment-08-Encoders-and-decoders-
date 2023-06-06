@@ -55,42 +55,71 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
+#### Step 1:
+Create module encoder and decoder.
 
+#### Step 2:
+Get inputs and outputs for encoders and decoders.
 
+#### Step 3:
+Perform "or" operation for encoder and "and" logic for decoders.
+
+#### Step 4:
+Perform RTL LOGIC and get waveform.
+
+#### Step-5:
+End the module.
 
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Pravinrajj
+RegisterNumber:  212222240080
 */
-
-
-
-
-
-
+### Encoder
+```
+module EX8(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
+```
+### Decoder
+```
+module EX8(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+```
 ### RTL LOGIC  
-
-
-
-
-
-
-
+#### Encoder
+![Screenshot (130)](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/bbe22232-0bd4-491f-be58-6daacae10a49)
+#### Decoder
+![Screenshot 2023-01-28 205527](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/57cd9920-4008-4146-bc86-1a4eda4a8bbe)
 
 ### TIMING DIGRAMS  
+#### Encoder
+![Screenshot (131)](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/abf933da-cf49-4801-bb8a-9ab4044bf27c)
 
-
-
-
+#### Decoder
+![Screenshot 2023-01-28 205802](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/cbd6dedb-a096-4070-adbc-fce0df2210d1)
 
 ### TRUTH TABLE 
-
-
-
-
+#### Encoder
+![encodertt](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/103e3bb7-e19a-400d-bcd9-14e6a5eb6c7e)
+#### Decoder
+![decodertt](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/f73a00ad-2389-46f5-9a12-0ccf31cfe013)
 
 
 ### RESULTS 
+Thus the program to implement encoder and decoder using verilog is verified.
