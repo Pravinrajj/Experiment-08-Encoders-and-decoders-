@@ -116,10 +116,10 @@ endmodule
 
 ### TRUTH TABLE 
 #### Encoder
+![Uploading 243119466-511aff65-1000-4a98-911a-433944a8a98e.png…]()
 
-![encodertt](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/103e3bb7-e19a-400d-bcd9-14e6a5eb6c7e)
 #### Decoder
-![decodertt](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/f73a00ad-2389-46f5-9a12-0ccf31cfe013)
+![243119485-771d7288-2cae-496c-91d4-0db018018b7b](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/7be44ce7-b786-4c8c-bc10-e01687121729)
 
 ### RESULTS 
 Thus the program to implement encoder and decoder using verilog is verified.
