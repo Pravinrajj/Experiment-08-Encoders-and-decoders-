@@ -116,7 +116,7 @@ endmodule
 
 ### TRUTH TABLE 
 #### Encoder
-![Uploading 243119466-511aff65-1000-4a98-911a-433944a8a98e.png…]()
+![243119466-511aff65-1000-4a98-911a-433944a8a98e](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/cd0c8d17-0dd9-4640-967e-2080b8bd1909)
 
 #### Decoder
 ![243119485-771d7288-2cae-496c-91d4-0db018018b7b](https://github.com/Pravinrajj/Experiment-08-Encoders-and-decoders-/assets/117917674/7be44ce7-b786-4c8c-bc10-e01687121729)
